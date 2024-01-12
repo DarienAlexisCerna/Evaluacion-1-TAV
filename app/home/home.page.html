@@ -1,0 +1,41 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start" >
+      <ion-back-button defaultHref="/"
+        text="back"
+        color="success" 
+        name="arrow-undo-outline"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Bienvenido {{ mensaje }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card class="fondo" style="color: rgb(255, 255, 255);">
+    <ion-card-header class="fondo">
+      <ion-card-content>
+        <img src="assets/Captura.PNG">
+      </ion-card-content>
+    </ion-card-header>
+
+    ¡Bienvenido a RegistrApp <br>
+    App hecha para registrar de manera más eficaz y rápida la asistencia de DuocUc. <br> <br> 
+    <ion-button (click)="redirectLogin()">
+      Ir al login
+    </ion-button>
+    <ion-button (click)="redirectRegistro()">
+      Ir a registrarme
+    </ion-button>
+    <ion-button (click)="cerrarSesion()" color="warning" shape="round">
+      Cerrar Sesión
+    </ion-button>
+  </ion-card>
+</ion-content>

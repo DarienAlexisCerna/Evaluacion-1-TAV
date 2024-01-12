@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start" >
+      <ion-back-button defaultHref="/"
+        text="back"
+        color="success" 
+        name="arrow-undo-outline"></ion-back-button>
+    </ion-buttons>
+
+
+    <ion-title>Recuperar Contraseña </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Recuperar Contraseña</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-label>Ingresar Usuario</ion-label>
+  <ion-input [(ngModel)]="sesion.usuario"></ion-input>
+
+  <ion-input type="password" [(ngModel)]="sesion.nuevapassword">Contraseña</ion-input>
+
+  <ion-button (click)="recuperar()">Ingresar</ion-button>
+
+
+</ion-content>
